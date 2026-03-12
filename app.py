@@ -1,33 +1,8 @@
-# import streamlit as st
-# import requests
-
-# API_KEY = "33db7e90fab4e248bd60a129ffc66eee"
-
-# st.title("Weather Tracker")
-
-# city = st.text_input("Enter city")
-
-# if city:
-#     url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric"
-#     response = requests.get(url)
-#     data = response.json()
-
-#     if data["cod"] == 200:
-#         temp = data["main"]["temp"]
-#         humidity = data["main"]["humidity"]
-#         weather = data["weather"][0]["description"]
-
-#         st.write(f"Temperature: {temp}°C")
-#         st.write(f"Humidity: {humidity}%")
-#         st.write(f"Condition: {weather}")
-#     else:
-#         st.write("City not found.")
-
 import streamlit as st
 import requests
 import matplotlib.pyplot as plt
 
-API_KEY = "YOUR_API_KEY"
+API_KEY = "33db7e90fab4e248bd60a129ffc66eee"
 
 # Page title
 st.title("🌤 Live Weather Tracker")
